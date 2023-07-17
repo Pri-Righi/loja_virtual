@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #3264e2;
+    font-style: italic;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header li {
+    font-style: normal;
+}
+
+header > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+}
+
+h2 {
+    color:   #3264e2;
+    font-style: italic;
+    font-size: 18px;
+    padding-bottom: 16px;
+    border-bottom: 3px solid;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.about-section {
+    display: flex;
+}
+
+.about-imagem {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.about-imagem img {
+    width: 100%;
+}
+
+.about-content {
+    flex: 1;
+}
+
+section {
+    padding: 48px;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+.lista-produto {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.lista-produto li {
+    list-style: none;
+    margin-bottom: 24px;
+    max-width: 100%;
+}
+
+.lista-produto li img {
+    width: 100%;
+    padding: 5px;
+    clear: both;
+}
+
+button {
+    display: inline;
+    padding: 8px;
+    border: none;
+    background-color: #3264e2;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.lista-produto h3 {
+    margin: 16px
+}
+
+section p {
+    margin-bottom: 20px;
+}
+
+ul {
+    text-align: center;
+}
+
+@media screen and (max-width: 757px) {
+    .about-section {
+        display: block;
+    }
+
+    .about-imagem,
+    .about-content {
+        width: 100%;
+    }
+
+    .about-imagem img {
+        margin-bottom: 20px;
+    }
+
+    .lista-produto {
+        display: block;
+        margin-left: 16px;
+        max-width: 90%;
+    }
+
+    .lista-produto img {
+        margin-top: 32px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .about-section {
+        display: block;
+    }
+
+    .about-imagem, 
+    .about-content {
+        width: 100%;
+    }
+
+.about-imagem img {
+    margin-bottom: 20px;
+    }
+
+.lista-produto {
+    grid-template-columns: repeat(2, 50%);
+}
+} 
+    
+    
+    
